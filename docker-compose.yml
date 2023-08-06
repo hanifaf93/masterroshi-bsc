@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  msa-web:
+    container_name: masterroshi-bsc
+    build: .
+    image: masterroshibscweb
+    ports:
+      - "8089:80"
+    volumes:
+      - .:/var/www/html
